@@ -1,165 +1,165 @@
 html, body {
-    height: 100%;
-    width: 100%;
-  }
-  
-  html, body, div {
-    display: flex;
-    margin: 0px;
-    padding: 0px;
-    justify-content: center;
-  }
-  
-  #info
- {
-  font-size: 20px;
-  margin: 2%;
- }
- 
-  h1 { 
-    text-align: center;
-  }
+  height: 100%;
+  width: 100%;
+}
 
-  #main { 
-    width: 50%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    border: 1px solid black;
-    border-radius: 25px;
-    background-color: whitesmoke;
-  }
+html, body, div {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: center;
+}
 
-  #header { 
-    width: 100%;
-    height: 25%;
-    flex-direction: column;
-    align-items: center;
-    font-size: 24px;
-    padding-bottom: 10%;
-  }
+#info
+{
+font-size: 20px;
+margin: 2%;
+}
 
-  #input {
-    width: 100%;
-    height:100%; 
-  }
+h1 { 
+  text-align: center;
+}
 
-  #userForm { 
-    height: 200%;
-    font-size: 24px;
-  }
+#main { 
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 25px;
+  background-color: whitesmoke;
+}
 
-  #list { 
-    width: 100%;
-    height: 75%;
-    display: flex;
-    flex-direction: column;
-    align-content: space-between;
-  }
+#header { 
+  width: 100%;
+  height: 25%;
+  flex-direction: column;
+  align-items: center;
+  font-size: 24px;
+  padding-bottom: 10%;
+}
 
-  .row { 
-    width: 100%;
-    height: 20%;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 24px;
-    border: 2px solid black;
-  }
-  
-  .cipherContainers { 
-    padding-left: 10%;
-    width:90%;
-    height: 100%;
-  }
- 
-  .buttonContainers { 
-    width: 10%;
-    height: 100%;
-  }
+#input {
+  width: 100%;
+  height:100%; 
+}
 
-  button { 
-    width: 100%;
-    height: 100%;
-  }
+#userForm { 
+  height: 200%;
+  font-size: 24px;
+}
 
-  #output { 
-    text-align: center;
-    border: 0px;
-  }
+#list { 
+  width: 100%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+}
+
+.row { 
+  width: 100%;
+  height: 20%;
+  flex-direction: row;
+  justify-content: space-between;
+  font-size: 24px;
+  border: 2px solid black;
+}
+
+.cipherContainers { 
+  padding-left: 10%;
+  width:90%;
+  height: 100%;
+}
+
+.buttonContainers { 
+  width: 10%;
+  height: 100%;
+}
+
+button { 
+  width: 100%;
+  height: 100%;
+}
+
+#output { 
+  text-align: center;
+  border: 0px;
+}
 
 
 
 
 /*Background Animation -- Sourced From https://codepen.io/baarbaracrr/pen/KKovmGb*/
 body {
-    margin: auto;
-    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-    overflow: auto;
-    background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
-    animation: gradient 15s ease infinite;
-    background-size: 400% 400%;
-    background-attachment: fixed;
+  margin: auto;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  overflow: auto;
+  background: linear-gradient(315deg, rgba(101, 0, 94, 1) 3%, rgba(60, 132, 206, 1) 38%, rgba(48, 238, 226, 1) 68%, rgba(255, 25, 25, 1) 98%);
+  animation: gradient 15s ease infinite;
+  background-size: 400% 400%;
+  background-attachment: fixed;
 }
 
 @keyframes gradient {
-    0% {
-        background-position: 0% 0%;
-    }
+  0% {
+      background-position: 0% 0%;
+  }
 
-    50% {
-        background-position: 100% 100%;
-    }
+  50% {
+      background-position: 100% 100%;
+  }
 
-    100% {
-        background-position: 0% 0%;
-    }
+  100% {
+      background-position: 0% 0%;
+  }
 }
 
 .wave {
-    background: rgb(255 255 255 / 25%);
-    border-radius: 1000% 1000% 0 0;
-    position: fixed;
-    width: 200%;
-    height: 12em;
-    animation: wave 10s -3s linear infinite;
-    transform: translate3d(0, 0, 0);
-    opacity: 0.8;
-    bottom: 0;
-    left: 0;
-    z-index: -1;
-    border: 0px;
+  background: rgb(255 255 255 / 25%);
+  border-radius: 1000% 1000% 0 0;
+  position: fixed;
+  width: 200%;
+  height: 12em;
+  animation: wave 10s -3s linear infinite;
+  transform: translate3d(0, 0, 0);
+  opacity: 0.8;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  border: 0px;
 }
 
 .wave:nth-of-type(2) {
-    bottom: -1.25em;
-    animation: wave 18s linear reverse infinite;
-    opacity: 0.8;
+  bottom: -1.25em;
+  animation: wave 18s linear reverse infinite;
+  opacity: 0.8;
 }
 
 .wave:nth-of-type(3) {
-    bottom: -2.5em;
-    animation: wave 20s -1s reverse infinite;
-    opacity: 0.9;
+  bottom: -2.5em;
+  animation: wave 20s -1s reverse infinite;
+  opacity: 0.9;
 }
 
 @keyframes wave {
-    2% {
-        transform: translateX(1);
-    }
+  2% {
+      transform: translateX(1);
+  }
 
-    25% {
-        transform: translateX(-25%);
-    }
+  25% {
+      transform: translateX(-25%);
+  }
 
-    50% {
-        transform: translateX(-50%);
-    }
+  50% {
+      transform: translateX(-50%);
+  }
 
-    75% {
-        transform: translateX(-25%);
-    }
+  75% {
+      transform: translateX(-25%);
+  }
 
-    100% {
-        transform: translateX(1);
-    }
+  100% {
+      transform: translateX(1);
+  }
 }
