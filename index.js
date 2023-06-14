@@ -78,4 +78,6 @@ function reverseStr(str) {
 
 function update(encodedStr) {
     output.innerHTML = encodedStr;
+    form.innerHTML = encodedStr;
+    form.value = encodedStr;
 }
